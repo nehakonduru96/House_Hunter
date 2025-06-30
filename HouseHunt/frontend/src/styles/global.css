@@ -1,0 +1,215 @@
+:root {
+  --color-light-gray: #edede9;
+  --color-light-taupe: #d6ccc2;
+  --color-off-white: #f5ebe0;
+  --color-beige: #e3d5ca;
+  --color-warm-taupe: #d5bdaf;
+  --color-text: #000000;
+  --color-text-secondary: #333333;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-off-white);
+  color: var(--color-text);
+}
+
+.primary-bg {
+  background-color: var(--color-warm-taupe);
+  color: var(--color-text);
+}
+
+.secondary-bg {
+  background-color: var(--color-light-gray);
+  color: var(--color-text);
+}
+
+.accent-bg {
+  background-color: var(--color-beige);
+  color: var(--color-text);
+}
+
+.light-bg {
+  background-color: var(--color-off-white);
+  color: var(--color-text);
+}
+
+/* Custom button styles */
+.custom-btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  color: var(--color-text);
+}
+
+.custom-btn.primary {
+  background-color: var(--color-warm-taupe);
+  color: var(--color-text);
+  border: none;
+}
+
+.custom-btn.primary:hover {
+  background-color: var(--color-light-taupe);
+  color: var(--color-text);
+}
+
+.custom-btn.secondary {
+  background-color: var(--color-light-gray);
+  color: var(--color-text);
+  border: none;
+}
+
+.custom-btn.secondary:hover {
+  background-color: var(--color-beige);
+  color: var(--color-text);
+}
+
+/* Card styles */
+.custom-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(214, 204, 194, 0.2);
+  padding: 16px;
+  margin: 16px;
+  color: var(--color-text);
+}
+
+/* Header styles */
+.page-header {
+  color: var(--color-text);
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+/* Navigation styles */
+.nav-link {
+  color: var(--color-text) !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--color-text) !important;
+  background-color: var(--color-light-gray) !important;
+}
+
+/* Footer styles */
+footer {
+  background-color: var(--color-light-taupe) !important;
+  color: var(--color-text) !important;
+  padding: 16px 0;
+}
+
+/* Navbar styles */
+.navbar.bg-body-tertiary {
+  background-color: var(--color-warm-taupe) !important;
+  box-shadow: 0 2px 8px rgba(214, 204, 194, 0.15);
+}
+
+.navbar-brand h2,
+.navbar-brand svg,
+.navbar-brand .home-icon {
+  color: var(--color-text) !important;
+}
+
+/* Add new logo styles */
+.navbar-brand h2 {
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+  margin: 0 !important;
+}
+
+.navbar-brand .home-icon {
+  font-size: 2.2rem !important;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #000000;
+  text-decoration: none;
+  margin-right: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-brand:hover {
+  color: #d5bdaf;
+  text-decoration: none;
+}
+
+/* Updated navbar link styles */
+.navbar .nav-link {
+  color: var(--color-text) !important;
+  background-color: var(--color-off-white) !important;
+  border: 1px solid var(--color-text) !important;
+  transition: all 0.3s ease;
+  padding: 4px 12px !important;
+  margin: 0 4px !important;
+  border-radius: 4px !important;
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.3px !important;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1) !important;
+  font-size: 0.85rem !important;
+}
+
+.navbar .nav-link:hover {
+  background-color: var(--color-light-gray) !important;
+  color: var(--color-text) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15) !important;
+}
+
+.navbar h5 {
+  color: var(--color-text) !important;
+  font-weight: 600 !important;
+  font-size: 0.9rem !important;
+}
+
+/* Updated logout button styles */
+.navbar .logout-btn {
+  background-color: var(--color-off-white) !important;
+  color: var(--color-text) !important;
+  border: 1px solid var(--color-text) !important;
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.3px !important;
+  padding: 4px 12px !important;
+  border-radius: 4px !important;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1) !important;
+  font-size: 0.85rem !important;
+}
+
+.navbar .logout-btn:hover {
+  background-color: var(--color-light-gray) !important;
+  color: var(--color-text) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Keep existing navbar-toggler styles */
+.navbar-toggler {
+  border-color: var(--color-text) !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Additional text styles */
+h1, h2, h3, h4, h5, h6, p, span, div {
+  color: var(--color-text);
+}
+
+/* Form labels and inputs */
+label, input, select, textarea {
+  color: var(--color-text) !important;
+}
+
+/* Table text */
+table, th, td {
+  color: var(--color-text);
+} 
